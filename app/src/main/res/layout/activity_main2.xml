@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.embshao.assignment2.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:layout_weight="2">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Std. Deviation"
+                    android:layout_weight="1"
+                    android:textColor="#fec63b"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Mean"
+                    android:layout_weight="1"
+                    android:textColor="#CD5C5C"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Value"
+                    android:layout_weight="1"
+                    android:textColor="#05740d"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/y0"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:text="60" />
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.83dp" />
+                    <TextView
+                        android:id="@+id/y1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:text="50" />
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.83dp" />
+                    <TextView
+                        android:id="@+id/y2"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:text="40" />
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.83dp" />
+                    <TextView
+                        android:id="@+id/y3"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:text="30" />
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.83dp" />
+                    <TextView
+                        android:id="@+id/y4"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:text="20" />
+                    <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.83dp" />
+                    <TextView
+                        android:id="@+id/y5"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:text="10" />
+
+                </LinearLayout>
+
+                <com.example.embshao.assignment2.PlotView
+                    android:id="@+id/customView"
+                    android:background="#CCCCCC"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_weight="8"
+                    android:layout_alignBottom="@+id/ll1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/customView"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/x0"
+                        android:layout_width="10dp"
+                        android:layout_height="fill_parent"
+                        android:text="0" />
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/x1"
+                        android:layout_width="10dp"
+                        android:layout_height="fill_parent"
+                        android:text="2" />
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/x2"
+                        android:layout_width="10dp"
+                        android:layout_height="fill_parent"
+                        android:text="4" />
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/x3"
+                        android:layout_width="10dp"
+                        android:layout_height="fill_parent"
+                        android:text="6" />
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/x4"
+                        android:layout_width="10dp"
+                        android:layout_height="fill_parent"
+                        android:text="8" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_weight="2"
+        app:backgroundTint="@color/steelblue"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <include layout="@layout/content_main2" />
+
+</android.support.design.widget.CoordinatorLayout>

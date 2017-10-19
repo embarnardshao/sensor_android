@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sensor Chooser</string>
+    <string name="title_activity_main2">Accelerometer</string>
+    <string name="title_activity_main3">Light</string>
+    <string name="title_activity_main4">Proximity</string>
+    <color name="steelblue">#1074bc</color>
+</resources>
